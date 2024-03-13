@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("Enter measurement of 1 side of the triangle: ");
+        let b=prompt("Enter measurement of 1 side of the triangle: ");
+        let c=prompt("Enter measurement of 1 side of the triangle: ");
+
+        function triangleType(){
+        if (isNaN(a) || isNaN(b) || isNaN(c)){
+           alert("Invalid Input. Please Enter a Number.");
+        }
+
+        else{
+        if(a==b && b==c){
+                alert("The triangle is EQUILATERIAL");
+            }
+        else if(a!==b && b!==c && c!==a){
+                alert("The triangle is SCALENE");
+            }
+        else if(a!==b && a!==c && b==c || b!==a && b!==c && a==c || c!==a && c!==b && b==a){
+                alert("The triangle is ISOSCELES");
+            }
+    }
+}
+triangleType();
+    </script>
+</body>
+</html>
